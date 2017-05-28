@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "type": "queueTrigger",
+      "name": "order",
+      "direction": "in",
+      "queueName": "incoming-orders",
+      "connection": "AzureWebJobsDashboard"
+    },
+    {
+      "type": "sendGrid",
+      "name": "$return",
+      "direction": "out",
+      "apiKey": "SendGridApiKeyAppSetting",
+      "from": "Paul Oliver <samples@functions.com>",
+      "to": "{CustomerEmail}"
+    }
+  ],
+  "disabled": false
+}

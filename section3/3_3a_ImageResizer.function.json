@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "inImage",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "uploadedimages/{name}.{extension}",
+      "connection": "section3poliverstorage_STORAGE"
+    },
+    {
+      "type": "blob",
+      "name": "outImage",
+      "path": "resizedimages/{name}-resized.jpg",
+      "connection": "section3poliverstorage_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

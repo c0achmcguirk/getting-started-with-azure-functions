@@ -1,0 +1,66 @@
+// --- GithubWebhookCSharp1 ---
+
+// github webhook
+{
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "webHookType": "github",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "disabled": false
+}
+
+
+// timer trigger
+{
+  "bindings": [
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "timerTrigger",
+      "name": "myTimer",
+      "schedule": "*/5 * * * * *",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
+
+// http trigger
+{
+  "bindings": [
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "httpTrigger",
+      "name": "req",
+      "authLevel": "function",
+      "methods": [
+        "get",
+        "post",
+        "delete",
+        "head",
+        "patch",
+        "put",
+        "options",
+        "trace"
+      ],
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}

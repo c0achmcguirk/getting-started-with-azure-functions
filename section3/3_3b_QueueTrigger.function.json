@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "message-queue",
+      "connection": "section3poliverstorage_STORAGE"
+    },
+    {
+      "type": "table",
+      "name": "outputTable",
+      "tableName": "Messages",
+      "connection": "section3poliverstorage_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
