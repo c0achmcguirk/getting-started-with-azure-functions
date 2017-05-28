@@ -63,4 +63,6 @@ This is the **Twilio** source code from video **3.3**. (I put the **b** in the f
     * 7.4: Use Azure Resource Manager with Function Apps
     * 7.5: Putting it all Together for Continuous Delivery
 
-![Ahhh, what a nice picture of the course author. He must be a nice gentleman.](http://i132.photobucket.com/albums/q8/c0achmcguirk/oliverp-circle-small_zpsgyjrocuv.jpg)
+![Paul Oliver, Course Author](http://i132.photobucket.com/albums/q8/c0achmcguirk/oliverp-circle-small_zpsgyjrocuv.jpg)
+**Paul Oliver**
+*What a nice picture of the course author. He must be a nice gentleman.*
